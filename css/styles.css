@@ -291,10 +291,10 @@ flex-direction: row;
 .person-icon{
     fill: currentColor;
 }
-.person-icon-link:hover,
+.person-icon:hover,
 .person-icon-link:focus{
     color: #FFFFFF ;
-    background-color: #2196F3;
+    background-color: #2196F3;    
 }
 
 
