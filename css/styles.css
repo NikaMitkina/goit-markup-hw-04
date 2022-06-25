@@ -292,9 +292,10 @@ flex-direction: row;
     fill: currentColor;
 }
 .person-icon:hover,
-.person-icon-link:focus{
+.person-icon:focus{
     color: #FFFFFF ;
-    background-color: #2196F3;    
+    background-color: #2196F3;
+    border-radius: 4px;
 }
 
 
