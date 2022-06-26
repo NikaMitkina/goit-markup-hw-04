@@ -133,9 +133,6 @@ flex-direction: row;
 
 
 
-
-
-
 /*--------------банер----------------*/
 .tagline {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
@@ -317,16 +314,15 @@ flex-direction: row;
     color: #AFB1B8;
    
 }
+.people-icon-link:hover,
+.people-icon-link:focus {
+    background-color: #2196F3 ;
+    color: #FFFFFF;
+}
 .person-icon{
     fill: currentColor;
-   
 }
-.person-icon-link:hover{
-    background-color: #2196F3;
-    color: #FFFFFF;
-    border: 5px solid #2196F3;
-    
-}
+
 
 
 /*-----------клієнти-------------*/
@@ -370,17 +366,22 @@ flex-direction: row;
     margin-left: auto;
     margin-right: auto;
 }
+.footer-list{
+    display: flex;
+    
+}
 .bottom{
     font-size: 14px;
     line-height: 1.7;
     display: block;
+    margin-top: 20px;
 }
 .bottom-nav{
     display: block;    
-    justify-content: center;   
+    justify-content: center;
+    
 }
-
-.bottom-nav.li:not(:last-child){
+.bottom-nav.li:not(:last-child) {
     margin-bottom: 9px;
 }
 .logo-f{
@@ -401,6 +402,7 @@ flex-direction: row;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
 }
 .contscts-link-f{
     color: rgba(255, 255, 255, 0.6);
@@ -410,10 +412,52 @@ flex-direction: row;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
 }
+
 .contscts-link-f:hover,
 .contscts-link-f:focus{
     color:var(--acsent-color);
+}
+.footer-icons{
+    padding-top: 12px;
+    margin-left: 70px;
+    border: none;
+    min-width: 206px;
+    display: block
+}
+.f-title{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.f-icons-item{
+    display: inline-block;
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+}
+.f-icons-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #44454E;
+    color: #FFFFFF;
+}
+.f-icons-link:hover,
+.f-icons-link:focus{
+    background-color: #2196F3;
+}
+.f-icon{
+    fill:  #FFFFFF;
 }
 
 
@@ -459,7 +503,7 @@ flex-direction: row;
 }
 
 
-/*--------------------пректи(портфоліо)------------------*/
+/*--------------------проекти(портфоліо)------------------*/
 .projects{
     display: flex;
     flex-wrap: wrap;
