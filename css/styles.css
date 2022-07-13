@@ -47,12 +47,12 @@ ul{
     display: flex;
 }
 .header{
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     align-items: center;
     display: inline;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -72,7 +72,7 @@ ul{
     justify-content: center;
 }
 .contacts{
-    padding-left: 280px;
+    padding-left: auto;
     align-items: center;
     justify-content: center;
 }
@@ -85,9 +85,16 @@ letter-spacing: 0.02em;
 display: flex;
 flex-direction: row;
 }
-.site-nav-item{
+/*.site-nav-item{
     margin-right: 50px;
-}
+}*/
+ .site-nav li:not(:last-child) {
+     margin-right: 50px;
+ }
+
+ .contacts li:not(:last-child) {
+     margin-right: 30px;
+ }
 .site-nav .site-nav-item:last-child{
     margin-right: 0;
 }
@@ -194,7 +201,7 @@ flex-direction: row;
     overflow: hidden;
 }
 
-/*  браузер не бачить ці елементи стилю*/
+
 .articles{
     display: flex;
     justify-content: center;
@@ -240,8 +247,10 @@ flex-direction: row;
     margin-top: 0;
 }
 .work-img{
-    margin-top: 90px;
-    margin-bottom: 90px;
+    display: block;
+    max-width: 100%;
+    /*margin-top: 90px;
+    margin-bottom: 90px;*/
 }
 .images{
     display: flex;
@@ -288,6 +297,7 @@ flex-direction: row;
 .position {
     color: var(--second-text-color);
     padding: 0;
+    margin: 0;
 }
 .person-box{
     padding-top: 30px;
@@ -374,19 +384,20 @@ flex-direction: row;
     font-size: 14px;
     line-height: 1.7;
     display: block;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 .bottom-nav{
     display: block;    
     justify-content: center;
     
 }
-.bottom-nav.li:not(:last-child) {
+.bottom-nav li:not(:last-child) {
     margin-bottom: 9px;
 }
 .logo-f{
     color: #FFFFFF;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .logo-h, .logo-f{
@@ -402,7 +413,7 @@ flex-direction: row;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-bottom: 9px;
+    /*margin-bottom: 9px;*/
 }
 .contscts-link-f{
     color: rgba(255, 255, 255, 0.6);
@@ -469,12 +480,15 @@ flex-direction: row;
     row-gap: 8px;
     margin-bottom: 50px;
 }
-.button-item {
+.button-item:not(:first-child) {
+    margin-left: 8px;
+}
+/*.button-item {
   margin-left: 8px;
 }
 .button-item :first-child {
  margin-left: 0;
-}
+}*/
 .button{   
     color: var(--main-text-color);
     background-color: #F5F4FA;
